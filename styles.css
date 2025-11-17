@@ -170,18 +170,15 @@ h1, h2 {
 
 #videoFullscreen {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 100vw;
-  height: 100vh;
-  transform: translate(-50%, -50%);
-  object-fit: contain;   /* 🔥 canvi important */
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
   background: black;
-  z-index: 9999;
-  padding: 0;
-  margin: 0;
+  object-fit: cover;
+  z-index: 100000;
+  display: none;
 }
-
 
 /* ⭐ Ajustos generals per a mòbil ⭐ */
 @media (max-width: 768px) {
@@ -227,13 +224,16 @@ h1, h2 {
 /* ⭐ Millora del vídeo fullscreen a MÒBIL ⭐ */
 #videoFullscreen {
   position: fixed;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  max-height: 100%;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  object-fit: contain;   /* 🔥 canvi important */
   background: black;
-  z-index: 10000;
+  z-index: 9999;
+  padding: 0;
+  margin: 0;
 }
 
 /* Evita el salt visual a iPhone */
@@ -251,5 +251,3 @@ html, body {
     padding-right: env(safe-area-inset-right);
   }
 }
-
-
