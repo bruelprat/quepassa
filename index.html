@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ens hem casat!</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ⭐ NOVA PANTALLA INICIAL ⭐ -->
+<div id="start-screen">
+  <button id="big-btn">Què passa?</button>
+  <button id="small-btn">Ja sé què passa</button>
+</div>
+<!-- ⭐ FI DE LA NOVA PANTALLA ⭐ -->
+
+<header class="hidden">
+  <img class="title-icon" src="icon_left.png" alt="icon left" style="width: 90px; height: auto;">
+  <h1>Ens hem casat!!!</h1>
+  <img class="title-icon" src="icon_right.png" alt="icon right" style="width: 90px; height: auto;">
+</header>
+
+  <main class="hidden">
+    <section id="intro">
+      <img id="main-photo" src="foto_principal.jpg" alt="Nosaltres">
+      <p>
+        Sí, ha passat! Ens hem casat i ens agradaria celebrar-ho amb vosaltres.
+        Aquí teniu tota la informació!
+      </p>
+    </section>
+
+    <nav id="menu">
+      <button onclick="showSection('festa')">Quan serà la festa?</button>
+      <button onclick="showSection('regal')">Es pot fer regal?</button>
+      <button onclick="playVideo()">Coses que potser borrarem</button>
+    </nav>
+
+    <section id="content">
+      <div id="festa" class="hidden">
+        <h2>🎉 La festa</h2>
+        <p>
+          La festa serà a una masia al camp durant un cap de setmana complet.
+          Aviat us enviarem el lloc i els detalls exactes perquè pugueu venir!
+        </p>
+      </div>
+
+      <div id="regal" class="hidden">
+        <h2>🎁 Regals</h2>
+        <p>
+          No cal fer regal, de veritat. Si algú vol, pot portar vi, olives,
+          algun detall o, senzillament, venir amb ganes de passar-ho bé.
+        </p>
+      </div>
+
+      <div id="extra" class="hidden">
+        <h2>🤷‍♂️ Apartat extra</h2>
+        <p>
+          Aquí hi podria haver alguna cosa important… o no. Ja ho veurem.
+        </p>
+      </div>
+    </section>
+
+<section id="timeline">
+
+  <div class="timeline-wrapper">
+
+    <!-- LÍNIA PRINCIPAL -->
+    <div class="timeline-line"></div>
+
+    <!-- MOMENTS -->
+    <div class="timeline-images">
+
+      <div class="moment">
+        <img src="moment1.jpg" alt="Moment 1">
+      </div>
+
+      <div class="moment">
+        <img src="moment2.jpg" alt="Moment 2">
+      </div>
+
+      <div class="moment">
+        <img src="moment3.jpg" alt="Moment 3">
+      </div>
+
+      <div class="moment">
+        <img src="moment4.jpg" alt="Moment 4">
+      </div>
+
+      <div class="moment">
+        <img src="moment5.jpg" alt="Moment 5">
+      </div>
+
+      <div class="moment">
+        <img src="moment6.jpg" alt="Moment 6">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <script src="script.js"></script>
+  
+<video id="videoFullscreen" width="1920" height="1080" playsinline preload="auto" muted>
+  <source src="el_teu_video.mp4" type="video/mp4">
+</video>
+
+</body>
+</html>

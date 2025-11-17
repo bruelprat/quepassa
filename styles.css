@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #faf7ef;
+  color: #333;
+}
+
+header {
+  background: #FFBD70;
+  padding: 1.2rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;       /* centra verticalment les imatges i el títol */
+  justify-content: space-between; /* empèny les imatges cap als costats */
+}
+
+header h1 {
+  margin: 50px;                 /* treu marges per defecte */
+  text-align: center;
+  flex-grow: 1;              /* el títol ocupa l'espai del mig */
+}
+
+h1, h2 {
+  margin: 0.5rem 0;
+}
+
+#intro {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+#intro img {
+  width: 60%;
+  max-width: 320px;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1rem;
+}
+
+#menu button {
+  padding: 0.8rem;
+  border: none;
+  background: #FFBD70;
+  color: #000;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#menu button:hover {
+  background: #bf997a;
+}
+
+#content {
+  padding: 1rem;
+  background: #fff;
+  margin: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hidden {
+  display: none;
+}
+
+/* --- TIMELINE HORITZONTAL --- */
+
+#timeline {
+  padding: 1rem;
+  text-align: center;
+}
+
+.timeline-wrapper {
+  position: relative;
+  margin: 2rem auto;
+  width: 95%;
+  max-width: 900px;
+}
+
+/* Línia central */
+.timeline-line {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #FFBD70;
+  border-radius: 2px;
+}
+
+/* Etiquetes dels anys */
+.year-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.year-labels span {
+  width: 50px;
+  text-align: center;
+}
+
+/* Contenidor d’imatges */
+.timeline-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: -30px;
+}
+
+/* Imatges petites */
+.moment img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #FFBD70;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+/* Creixen amb hover */
+.moment img:hover {
+  transform: scale(5);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  z-index: 20;
+}
+#fotos img {
+  width: 65%;
+  max-width: 300px;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+}
+/* ⭐ Pantalla inicial ⭐ */
+#start-screen {
+  position: fixed;
+  inset: 0;
+  background: #faf7ef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  z-index: 9999;
+}
+
+#start-screen button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #FFBD70;
+  font-size: 1.2rem;
+}
+
+#small-btn {
+  font-size: 0.9rem;
+  padding: 0.6rem 1.2rem;
+}
+
+#videoFullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  background: black;
+  object-fit: cover;
+  z-index: 100000;
+  display: none;
+}
+
