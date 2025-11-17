@@ -180,3 +180,72 @@ h1, h2 {
   display: none;
 }
 
+/* ⭐ Ajustos generals per a mòbil ⭐ */
+@media (max-width: 768px) {
+
+  header img.title-icon {
+    width: 60px !important;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  #intro img {
+    width: 85%;
+  }
+
+  #menu {
+    padding: 0.5rem;
+  }
+
+  #menu button {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  /* ⭐ Millora timeline a mòbil ⭐ */
+  .timeline-images {
+    gap: 10px;
+  }
+
+  .moment img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .moment img:hover {
+    transform: scale(3.3);
+  }
+
+}
+
+/* ⭐ Millora del vídeo fullscreen a MÒBIL ⭐ */
+#videoFullscreen {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 100%;
+  background: black;
+  z-index: 10000;
+}
+
+/* Evita el salt visual a iPhone */
+html, body {
+  overscroll-behavior: none;
+  max-height: 100vh;
+}
+
+/* Safe areas per a notch / pantalles corbades */
+@supports (padding: env(safe-area-inset-top)) {
+  #videoFullscreen {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+}
+
