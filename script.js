@@ -1,4 +1,3 @@
-// script.js — substitueix COMPLETAMENT el teu script actual per aquest
 window.addEventListener("DOMContentLoaded", () => {
   const start = document.getElementById("start-screen");
   const big = document.getElementById("big-btn");
@@ -115,7 +114,7 @@ function finishVideo() {
 
 // Funció del menú
 function showSection(id) {
-  const sections = ["festa", "regal", "extra"];
+  const sections = ["festa", "regal", "extra","gemma"];
   sections.forEach(sec => {
     const el = document.getElementById(sec);
     if (el) el.classList.add("hidden");
