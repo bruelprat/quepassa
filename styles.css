@@ -251,3 +251,43 @@ html, body {
     padding-right: env(safe-area-inset-right);
   }
 }
+/*Coses de la gemma*/
+.gemma-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.gemma-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #FFBD70;
+}
+
+.gemma-text {
+  flex: 1;
+  min-width: 200px;
+}
+
+.insta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #bf997a;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
+
+.insta-link:hover {
+  color: #FFBD70;
+}
+
+.insta-icon {
+  width: 20px;
+  height: 20px;
+}
