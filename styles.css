@@ -311,5 +311,59 @@ html, body {
     max-width: 300px;
   }
 }
+.casa-box {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.casa-image-block {
+  text-align: center;
+}
+
+.casa-photo {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+  transition: transform 0.3s ease;
+}
+
+.casa-photo:hover {
+  transform: scale(1.02);
+}
+
+.casa-text {
+  max-width: 450px;
+}
+
+.form-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.4rem;
+  background: #FFBD70;
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+.form-btn:hover {
+  background: #bf997a;
+}
+
+.llista-portar {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+
+.llista-portar li {
+  margin-bottom: 0.5rem;
+}
 
 
