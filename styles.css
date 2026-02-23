@@ -306,3 +306,10 @@ html, body {
   margin-top: 0.5rem;
 }
 
+@media (max-width: 600px) {
+  .casa-photo {
+    max-width: 300px;
+  }
+}
+
+
