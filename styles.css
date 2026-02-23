@@ -261,8 +261,8 @@ html, body {
 }
 
 .gemma-photo {
-  width: 120px;
-  height: 120px;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
   border-radius: 12px;
   border: 2px solid #FFBD70;
@@ -365,5 +365,6 @@ html, body {
 .llista-portar li {
   margin-bottom: 0.5rem;
 }
+
 
 
