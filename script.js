@@ -114,7 +114,7 @@ function finishVideo() {
 
 // Funció del menú
 function showSection(id) {
-  const sections = ["festa", "regal", "extra","gemma","pagar","vestimenta"];
+  const sections = ["festa", "regal", "extra","gemma","portar"];
   sections.forEach(sec => {
     const el = document.getElementById(sec);
     if (el) el.classList.add("hidden");
@@ -122,4 +122,5 @@ function showSection(id) {
   const t = document.getElementById(id);
   if (t) t.classList.remove("hidden");
 }
+
 
