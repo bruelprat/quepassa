@@ -114,13 +114,17 @@ function finishVideo() {
 
 // Funció del menú
 function showSection(id) {
-  const sections = ["festa", "regal", "extra","gemma","portar"];
-  sections.forEach(sec => {
-    const el = document.getElementById(sec);
-    if (el) el.classList.add("hidden");
+  const sections = document.querySelectorAll("#content > div");
+
+  sections.forEach(section => {
+    section.classList.add("hidden");
   });
-  const t = document.getElementById(id);
-  if (t) t.classList.remove("hidden");
+
+  const target = document.getElementById(id);
+  if (target) {
+    target.classList.remove("hidden");
+  }
 }
+
 
 
