@@ -33,95 +33,94 @@
     </section>
 
     <nav id="menu">
-     	<button onclick="showSection('festa')">Quan i on?</button>
-      	<button onclick="showSection('regal')">Es pot fer regal?</button>
-      	<button onclick="showSection('gemma')">D'on surten aquests anells tan guapos?</button>
-		<button onclick="showSection('vestimenta')">Com cal anar vestit?</button>
-		<button onclick="showSection('pagar')">Quant costarà la broma?</button>
-    </nav>
+  <button onclick="showSection('festa')">Quan i on?</button>
+  <button onclick="showSection('portar')">Què s’ha de portar?</button>
+  <button onclick="showSection('gemma')">D'on surten aquests anells tan guapos?</button>
+  <button onclick="showSection('regal')">Es pot fer regal?</button>
+</nav>
 
-    <section id="content">
+<section id="content">
 
-    <!-- FESTA ACTUALITZADA -->
-    <div id="festa" class="hidden">
-      <h2>La festa 🎉</h2>
+  <!-- FESTA -->
+  <div id="festa" class="hidden">
+    <h2>La festa 🎉</h2>
 
-      <p>
-        La festa serà durant el cap de setmana del <strong>8 al 10 de maig</strong>.
-        Ja tenim casa reservada: una masia a Sant Pau de Segúries, al Ripollès. Si voleu ubicació i més informació sobre el lloc, només cal clicar sobre la imatge.
-      </p>
+    <p>
+      La festa serà durant el cap de setmana del <strong>8 al 10 de maig</strong>.
+      Ja tenim casa reservada: una masia a Sant Pau de Segúries, al Ripollès.
+      Si voleu ubicació i més informació sobre el lloc, només cal clicar sobre la imatge.
+    </p>
 
-      <div class="casa-box">
-       <a href="https://www.google.com/maps/place/Casa+de+col%C3%B2nies+Llar+Sant+Pau/@42.2613516,2.3706592,15.41z/data=!4m9!3m8!1s0x12a549655a85b9c9:0xd212c5fa84cb4d3b!5m2!4m1!1i2!8m2!3d42.2617445!4d2.3719776!16s%2Fg%2F11b6hqf97h?entry=ttu"
-   target="_blank"
-   class="casa-link">
+    <div class="casa-box">
+      <div class="casa-image-block">
+        <a href="https://www.google.com/maps/place/Casa+de+col%C3%B2nies+Llar+Sant+Pau/@42.2613516,2.3706592,15.41z/data=!4m9!3m8!1s0x12a549655a85b9c9:0xd212c5fa84cb4d3b!5m2!4m1!1i2!8m2!3d42.2617445!4d2.3719776!16s%2Fg%2F11b6hqf97h?entry=ttu"
+           target="_blank">
+          <img src="casa.jpg"
+               alt="Casa de colònies Llar Sant Pau"
+               class="casa-photo">
+        </a>
+        <p class="map-hint">📍 Clica la imatge per veure la ubicació</p>
+      </div>
 
-  <img src="casa.jpg"
-       alt="Casa de colònies Llar Sant Pau"
-       class="casa-photo clickable">
-</a>
-		<p class="map-hint">📍 Clica la imatge per veure la ubicació</p>
-        <div class="casa-text">
-          <p>
-            Per organització d'espais, àpats i al·lèrgies,
-            ens aniria bé que, si no ho heu fet, omplissiu el formulari:
-          </p>
+      <div class="casa-text">
+        <p>
+          Per organització d'espais, àpats i al·lèrgies,
+          ens aniria bé que, si no ho heu fet, omplissiu el formulari:
+        </p>
 
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-isFqXq3ogkkj_uNz45AgotLO-h2-gSoOlUZqc4J0uIV19w/viewform?usp=header"
-             target="_blank"
-             class="form-btn">
-             FORMULARI
-          </a>
-        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-isFqXq3ogkkj_uNz45AgotLO-h2-gSoOlUZqc4J0uIV19w/viewform?usp=header"
+           target="_blank"
+           class="form-btn">
+          FORMULARI
+        </a>
       </div>
     </div>
+  </div>
 
-<div id="regal" class="hidden">
-  <h2>Es pot fer regal?</h2>
-  <p>No.</p>
-</div>
+  <!-- QUÈ CAL PORTAR -->
+  <div id="portar" class="hidden">
+    <h2>Què s’ha de portar?</h2>
+    <ul class="llista-portar">
+      <li>Roba còmode</li>
+      <li>Sac de dormir i coixinera</li>
+      <li>Roba de mudar (si voleu per dissabte nit)</li>
+      <li>Tovallola (hi ha dutxa i piscina)</li>
+      <li>Banyador si voleu</li>
+      <li>Neceser bàsic amb sabó, xampú i el que vulgueu</li>
+    </ul>
+    <p>Ja farem recordatori 😉</p>
+  </div>
 
-<div id="gemma" class="hidden">
-  <h2>Anells i caixa</h2>
+  <!-- GEMMA -->
+  <div id="gemma" class="hidden">
+    <h2>Anells i caixa</h2>
 
-  <div class="gemma-box">
-    <img src="gemma.jpg" alt="Gemma" class="gemma-photo">
+    <div class="gemma-box">
+      <img src="gemma.jpg" alt="Gemma" class="gemma-photo">
 
-    <div class="gemma-text">
-      <p>
-        Els anells i la caixa són obra de la nostra gran amiga Gemma.
-        Us deixem l'enllaç amb el seu Instagram perquè pugueu veure les seves creacions.
-        Ens sembla tot preciós i una opció perfecta per si heu de fer regals o us voleu comprar alguna joia. #ad
-      </p>
+      <div class="gemma-text">
+        <p>
+          Els anells i la caixa són obra de la nostra gran amiga Gemma.
+          Us deixem l'enllaç amb el seu Instagram perquè pugueu veure les seves creacions.
+        </p>
 
-      <a href="https://www.instagram.com/lunaroja_art/" 
-         target="_blank" 
-         class="insta-link">
-        <img src="instagram_icon.png" alt="Instagram" class="insta-icon">
-        @lunaroja_art
-      </a>
+        <a href="https://www.instagram.com/lunaroja_art/"
+           target="_blank"
+           class="insta-link">
+          <img src="instagram_icon.png" alt="Instagram" class="insta-icon">
+          @lunaroja_art
+        </a>
+      </div>
     </div>
   </div>
-</div>
 
-<div id="pagar" class="hidden">
-  <h2>Quant cal pagar?</h2>
-  <p>
-    Res, ens fa il·lusió compartir unes estones amb vosaltres.
-    No cal pagar res. No serà un hotel de 5 estrelles, potser toca menjar macarrons amb tomàquet
-    i dormir en una llitera, però com a mínim és gratis (?).
-  </p>
-</div>
+  <!-- REGAL -->
+  <div id="regal" class="hidden">
+    <h2>Es pot fer regal?</h2>
+    <p>No.</p>
+  </div>
 
-<div id="vestimenta" class="hidden">
-  <h2>Com anar vestit?</h2>
-  <p>
-    No ens vestirem de casament, ja queda avisat. Recomanem roba còmode.
-    Tot i així, per petició popular, s'està plantejant de fer una nit d'anar ben vestits, ja anirem concretant.
-  </p>
-</div>
-
-    </section>
+</section>
 
 <section id="timeline">
 
@@ -170,6 +169,7 @@
 </body>
 
 </html>
+
 
 
 
